@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+// Лог в консоль, чтобы проверить загрузку
+console.log("✅ Файл layout.tsx загружается!");
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
