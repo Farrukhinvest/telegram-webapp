@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoJack Web App</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        button { padding: 10px 20px; font-size: 18px; }
+    </style>
+</head>
+<body>
+    <h1>Welcome to CryptoJack!</h1>
+    <p>Click the button below to continue.</p>
+    <button onclick="sendData()">Continue</button>
+
+    <script>
+        function sendData() {
+            let tg = window.Telegram.WebApp;
+            tg.sendData("User clicked continue!"); 
+            tg.close();
+        }
+    </script>
+</body>
+</html>
+
